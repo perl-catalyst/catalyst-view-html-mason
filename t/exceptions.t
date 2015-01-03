@@ -8,6 +8,10 @@ use lib "$FindBin::Bin/lib";
 
 use Catalyst::Test 'TestAppErrors';
 
+if($Catalyst::VERSION > 5.90053) {
+  plan skip_all => "This test doesn't work with your version of Catalyst";
+}
+
 is(get('/'), "tiger\n" x 2, 'Basic rendering' );
 
 if ( $Catalyst::VERSION >= 5.89000 ) {
