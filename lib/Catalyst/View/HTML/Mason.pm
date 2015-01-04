@@ -126,6 +126,11 @@ name (which will be resolved using Encode::find_encoding()), or an
 Encode::Encoding object.  See L<Encode::Supported> for a list of
 encodings.
 
+B<NOTE> Starting in L<Catalyst> v5.90080 we encode text like body
+responses as UTF8 automatically.  In some cases templates that did
+not declare an encoding previously will now need to.  In general I
+find setting this to 'UTF-8' is a forward looking approach.
+
 =cut
 
 {

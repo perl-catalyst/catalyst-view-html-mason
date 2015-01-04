@@ -2,6 +2,10 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+ * Fix tests so that they work on more recent Perl releases
+ * Added a test around the 5.90080+ UTF-8 support.
+ * A few docs around encoding
+
 0.18      2011-05-27 08:57:34 Europe/Berlin
 
  * Bump dependencies on Capture::Tiny and Catalyst::Helper to 0.10 and 1.33,
